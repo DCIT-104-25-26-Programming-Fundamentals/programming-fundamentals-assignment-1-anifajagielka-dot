@@ -39,3 +39,65 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def calculate_sum(numbers):
+    """Return the sum of all values in `numbers` without using sum()."""
+    total = 0
+    for value in numbers:
+        total += value
+    return total
+ 
+ 
+def calculate_average(numbers):
+    """Return the average of `numbers`."""
+    return calculate_sum(numbers) / len(numbers)
+ 
+ 
+def find_maximum(numbers):
+    """Return the largest value in `numbers` without using max()."""
+    largest = numbers[0]
+    for value in numbers:
+        if value > largest:
+            largest = value
+    return largest
+ 
+ 
+def find_minimum(numbers):
+    """Return the smallest value in `numbers` without using min()."""
+    smallest = numbers[0]
+    for value in numbers:
+        if value < smallest:
+            smallest = value
+    return smallest
+ 
+ 
+def main():
+    count = int(input("How many numbers? "))
+ 
+    if count <= 0:
+        print("Error: The number of values must be a positive integer.")
+        return
+ 
+    numbers = []
+    for i in range(1, count + 1):
+        value = float(input(f"Enter number {i}: "))
+        numbers.append(value)
+ 
+    total = calculate_sum(numbers)
+    average = calculate_average(numbers)
+    maximum = find_maximum(numbers)
+    minimum = find_minimum(numbers)
+ 
+    # Print whole numbers without a trailing .0, matching the example output.
+    def fmt(n):
+        return int(n) if n == int(n) else n
+ 
+    print()
+    print("Results:")
+    print(f"Sum:     {fmt(total)}")
+    print(f"Average: {fmt(round(average, 2))}")
+    print(f"Maximum: {fmt(maximum)}")
+    print(f"Minimum: {fmt(minimum)}")
+ 
+ 
+if __name__ == "__main__":
+    main()
