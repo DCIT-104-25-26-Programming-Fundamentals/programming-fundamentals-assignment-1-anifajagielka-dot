@@ -24,7 +24,7 @@ def modulus(a, b):
         return None
     return a % b
  
- 
+
 def power(a, b):
     return a ** b
  

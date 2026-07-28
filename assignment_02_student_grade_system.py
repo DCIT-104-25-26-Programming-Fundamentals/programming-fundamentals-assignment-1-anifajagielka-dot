@@ -14,7 +14,6 @@ def grd(score):
     else:
         return "F"
  
- 
 def main():
     score = int(input("Enter student score (0-100): "))
     grade = grd(score)

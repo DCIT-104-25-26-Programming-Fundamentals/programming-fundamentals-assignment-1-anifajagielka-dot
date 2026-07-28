@@ -19,7 +19,7 @@ def run_part_a():
     number = int(input("Enter a number: "))
     print()
     print_multiplication_table(number)
- 
+
  
 def run_part_b():
     n = int(input("Enter N (print tables from 1 to N): "))

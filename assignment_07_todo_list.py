@@ -14,7 +14,7 @@ def add_task(tasks):
     description = input("Enter task: ")
     tasks.append(description)
     print(f'Task added: "{description}"')
- 
+
  
 def view_tasks(tasks):
     """Display all tasks, numbered from 1. Show a message if there are none."""

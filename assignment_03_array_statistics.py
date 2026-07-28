@@ -46,7 +46,6 @@ def calculate_sum(numbers):
         total += value
     return total
  
- 
 def calculate_average(numbers):
     """Return the average of `numbers`."""
     return calculate_sum(numbers) / len(numbers)

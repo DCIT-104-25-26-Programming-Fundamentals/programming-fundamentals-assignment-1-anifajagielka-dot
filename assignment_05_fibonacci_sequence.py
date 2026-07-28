@@ -19,7 +19,7 @@ def is_fibonacci(number):
  
     return a == number
  
- 
+
 def run_part_a():
     n = int(input("How many terms? "))
  

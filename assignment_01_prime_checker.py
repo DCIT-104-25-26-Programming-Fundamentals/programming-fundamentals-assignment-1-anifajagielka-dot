@@ -1,5 +1,4 @@
 
- 
 def is_prime(number):
     # Numbers less than 2 (0, 1, negatives) are never prime.
     if number < 2:

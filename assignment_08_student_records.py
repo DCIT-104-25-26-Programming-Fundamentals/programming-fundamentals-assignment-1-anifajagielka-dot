@@ -21,7 +21,7 @@ def find_student(students, student_id):
             return student
     return None
  
- 
+
 def add_student(students):
     """Prompt for a new student's details and append the record to `students`."""
     name = input("Student name: ")

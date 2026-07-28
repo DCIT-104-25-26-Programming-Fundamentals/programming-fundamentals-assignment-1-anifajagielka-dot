@@ -8,7 +8,7 @@ def read_matrix(rows, cols, label=""):
         matrix.append(row)
     return matrix
  
- 
+
 def display_matrix(matrix):
     """Print `matrix` as a neatly aligned grid."""
     # Work out the widest value in each column so everything lines up.
